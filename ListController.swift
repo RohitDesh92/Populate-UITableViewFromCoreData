@@ -35,7 +35,7 @@ class ListController: ViewController, UITableViewDelegate, UITableViewDataSource
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default , reuseIdentifier: "cell" )
         let a = res[indexPath.row]
-            cell.textLabel?.text = a.city
+            cell.textLabel?.text = a.name
         return(cell)
     }
 
