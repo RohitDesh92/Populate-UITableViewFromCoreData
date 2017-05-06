@@ -15,6 +15,8 @@
 		F90905F11EA9ADA500B7B54C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90905EF1EA9ADA500B7B54C /* LaunchScreen.storyboard */; };
 		F90905FC1EA9ADA700B7B54C /* CoreDataAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90905FB1EA9ADA700B7B54C /* CoreDataAssignmentTests.swift */; };
 		F90906071EA9ADA700B7B54C /* CoreDataAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90906061EA9ADA700B7B54C /* CoreDataAssignmentUITests.swift */; };
+		F98B72081EBAE93F00C461C1 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98B72071EBAE93F00C461C1 /* CoreDataManager.swift */; };
+		F9ACCBF31EBDB7AA00F1B220 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACCBF21EBDB7AA00F1B220 /* ListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F90906021EA9ADA700B7B54C /* CoreDataAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90906061EA9ADA700B7B54C /* CoreDataAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataAssignmentUITests.swift; sourceTree = "<group>"; };
 		F90906081EA9ADA700B7B54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98B72071EBAE93F00C461C1 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F9ACCBF21EBDB7AA00F1B220 /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListController.swift; path = ../ListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		F90905E21EA9ADA400B7B54C /* CoreDataAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				F9ACCBF21EBDB7AA00F1B220 /* ListController.swift */,
 				F90905E31EA9ADA400B7B54C /* AppDelegate.swift */,
 				F90905E51EA9ADA400B7B54C /* ViewController.swift */,
 				F90905E71EA9ADA500B7B54C /* Main.storyboard */,
@@ -106,6 +111,7 @@
 				F90905EF1EA9ADA500B7B54C /* LaunchScreen.storyboard */,
 				F90905F21EA9ADA500B7B54C /* Info.plist */,
 				F90905EA1EA9ADA500B7B54C /* CoreDataAssignment.xcdatamodeld */,
+				F98B72071EBAE93F00C461C1 /* CoreDataManager.swift */,
 			);
 			path = CoreDataAssignment;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 				TargetAttributes = {
 					F90905DF1EA9ADA400B7B54C = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 5PKYKCYDR5;
 						ProvisioningStyle = Automatic;
 					};
 					F90905F61EA9ADA700B7B54C = {
@@ -263,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F90905E61EA9ADA400B7B54C /* ViewController.swift in Sources */,
+				F9ACCBF31EBDB7AA00F1B220 /* ListController.swift in Sources */,
 				F90905E41EA9ADA400B7B54C /* AppDelegate.swift in Sources */,
+				F98B72081EBAE93F00C461C1 /* CoreDataManager.swift in Sources */,
 				F90905EC1EA9ADA500B7B54C /* CoreDataAssignment.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5PKYKCYDR5;
 				INFOPLIST_FILE = CoreDataAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sjsu.edu.CoreDataAssignment;
@@ -430,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5PKYKCYDR5;
 				INFOPLIST_FILE = CoreDataAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sjsu.edu.CoreDataAssignment;
@@ -511,6 +522,7 @@
 				F909060D1EA9ADA700B7B54C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F909060E1EA9ADA700B7B54C /* Build configuration list for PBXNativeTarget "CoreDataAssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +531,7 @@
 				F90906101EA9ADA700B7B54C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F90906111EA9ADA700B7B54C /* Build configuration list for PBXNativeTarget "CoreDataAssignmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +540,7 @@
 				F90906131EA9ADA700B7B54C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

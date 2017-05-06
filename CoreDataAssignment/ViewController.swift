@@ -7,17 +7,48 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
+ var nametext = " "
+ var emailtext = " "
+ var citytext = " "
+ var ziptext = " "
 
+
+class ViewController: UIViewController, UITextViewDelegate {
+    @IBOutlet weak var name_tv: UITextField!
+    @IBOutlet weak var email_tv: UITextField!
+    @IBOutlet weak var city_tv: UITextField!
+    @IBOutlet weak var zip_tv: UITextField!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
+    
+    // hide keyboard when user touches outside
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func SaveRecord(_ sender: Any) {
+        nametext = name_tv.text!
+        emailtext = email_tv.text!
+        citytext = city_tv.text!
+        ziptext = zip_tv.text!
+ 
+ 
+      CoreDataManager.saveCity()
+     // CoreDataManager.getObject()
+    }
+    
+    @IBAction func DeleteAll(_ sender: Any) {
+        
+        CoreDataManager.deleteAll()
     }
 
 
