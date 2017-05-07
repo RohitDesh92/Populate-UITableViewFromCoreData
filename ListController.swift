@@ -33,7 +33,10 @@ class ListController: ViewController, UITableViewDelegate, UITableViewDataSource
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default , reuseIdentifier: "cell" )
+       // let cell = UITableViewCell(style: UITableViewCellStyle.default , reuseIdentifier: "cell" )
+        let cellIdentifier = "cell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
+            ?? UITableViewCell(style: .subtitle, reuseIdentifier: cellIdentifier)
         let a = res[indexPath.row]
             cell.textLabel?.text = a.name
         return(cell)
